@@ -44,7 +44,7 @@ URLSession.shared.dataTask(with: request, completionHandler: { data, response, e
     if let response = response,
         let data = data,
         let jsonData = try? JSON(data: data){
-            print(jsonData["results"][0]["word"].string! + 
+            print(jsonData["results"][0]["word"].string! + " " + 
               jsonData["results"][0]["lexicalEntries"][0]["pronunciations"][0]["phoneticSpelling"].string! +
               " is " + jsonData["results"][0]["lexicalEntries"][0]["entries"][0]["senses"][0]["definitions"][0].string!)
 
