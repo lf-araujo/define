@@ -25,7 +25,6 @@ let group = DispatchGroup.init()
 let appId = "8a7dd147"
 let appKey = "7e7d022fbce6d8d4523eac3baa5bd04c"
 
-let word = "Ace"
 let url = URL(string: "https://od-api.oxforddictionaries.com/api/v1/entries/\(argument["--lang"]!)/\(argument["WORD"]!)")!
 var request = URLRequest(url: url)
 request.addValue("application/json", forHTTPHeaderField: "Accept")
@@ -43,10 +42,11 @@ URLSession.shared.dataTask(with: request, completionHandler: { data, response, e
 
     if let response = response,
         let data = data,
-        let jsonData = try? JSON(data: data){
-            print(jsonData["results"][0]["word"].string! + " " + 
+        let jsonData = try? JSON(data: data) {
+            print(jsonData["results"][0]["word"].string! + " [" +
               jsonData["results"][0]["lexicalEntries"][0]["pronunciations"][0]["phoneticSpelling"].string! +
-              " is " + jsonData["results"][0]["lexicalEntries"][0]["entries"][0]["senses"][0]["definitions"][0].string!)
+              "] is " +
+              jsonData["results"][0]["lexicalEntries"][0]["entries"][0]["senses"][0]["definitions"][0].string!)
 
     } else {
         print(error)
