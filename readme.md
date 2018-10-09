@@ -8,7 +8,7 @@ It is coded in Swift and can be run as a marathon script with a simple:
 marathon run lf-araujo/define.git
 ``` 
 
-A binary will be provided for Ubuntu 18.04.
+A binary ~~will be~~ is provided for Ubuntu 18.04.
 
 ## Usage:
 
@@ -16,10 +16,12 @@ A binary will be provided for Ubuntu 18.04.
 Get definitions from the Oxford Dictionary right from the command line.
 
 Usage:
- define WORD [-l LANG]
+ define WORD [-l LANG] [-as]
 
 Options:
- -l LANG --lang LANG  [default: en]
- -h --help            Shows this screen
+ -l LANG --lang LANG  [default: en]   Language (es, gu, hi, lv, sw, ta)
+ -a --antonym                         Get antonyms for WORD
+ -s --synonym                         Get synonyms for WORD
+ -h --help                            Shows this screen
  --version
 ```
