@@ -4,8 +4,8 @@ This is a small command line tool to check definitions from Oxford dictionary ri
 
 It is coded in Swift and can be run as a marathon script with a simple: 
 
-```
-marathon run
+```bash
+marathon run lf-araujo/define.git
 ``` 
 
 A binary will be provided for Ubuntu 18.04.
