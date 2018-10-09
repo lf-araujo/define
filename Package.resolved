@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Docopt",
+        "repositoryURL": "https://github.com/lf-araujo/docopt.swift.git",
+        "state": {
+          "branch": null,
+          "revision": "f0cd10c0a3468d6046afb3e3cd666a76e8447ae5",
+          "version": "0.0.1"
+        }
+      },
+      {
+        "package": "Rainbow",
+        "repositoryURL": "https://github.com/onevcat/Rainbow",
+        "state": {
+          "branch": null,
+          "revision": "797a68d0a642609424b08f11eb56974a54d5f6e2",
+          "version": "3.1.4"
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
+        "state": {
+          "branch": null,
+          "revision": "184c6884998c41f71a73c459f9b525b7121be846",
+          "version": "4.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

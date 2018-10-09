@@ -1,6 +1,7 @@
 import Foundation
 import Docopt // marathon: https://github.com/lf-araujo/docopt.swift.git
 import SwiftyJSON // marathon: https://github.com/SwiftyJSON/SwiftyJSON.git
+import Rainbow // marathon: https://github.com/onevcat/Rainbow.git
 
 let doc: String = """
 Get definitions from the Oxford Dictionary right from the command line.
@@ -43,7 +44,7 @@ func definition() {
     if let response = response,
         let data = data,
         let jsonData = try? JSON(data: data) {
-            print(jsonData["results"][0]["word"].string! + " [" +
+            print(jsonData["results"][0]["word"].string!.bold.red + " [" +
               jsonData["results"][0]["lexicalEntries"][0]["pronunciations"][0]["phoneticSpelling"].string! +
               "] is " +
               jsonData["results"][0]["lexicalEntries"][0]["entries"][0]["senses"][0]["definitions"][0].string!)
@@ -74,7 +75,7 @@ func antonyms() {
            for (key, subJson): (String, JSON) in jsonData["results"][0]["lexicalEntries"] {
               //print(key)
               print(subJson["entries"][0]["senses"][0]["antonyms"].arrayValue.map({$0["text"].stringValue})
-                .map {String($0)} .joined(separator: "\n"))
+                .map {String($0)} .joined(separator: ", ").green)
             }
     } else {
         print(error)
@@ -102,7 +103,7 @@ func synonym() {
            for (key, subJson): (String, JSON) in jsonData["results"][0]["lexicalEntries"] {
               //print(key)
               print(subJson["entries"][0]["senses"][0]["synonyms"].arrayValue.map({$0["text"].stringValue})
-                .map {String($0)} .joined(separator: "\n"))
+                .map {String($0)} .joined(separator: ", ").blue)
 
             }
     } else {
