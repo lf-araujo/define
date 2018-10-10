@@ -10,7 +10,7 @@ A binary ~~will be~~ is provided for Ubuntu 18.04.
 
 ## Usage:
 
-```bash
+```
 Get definitions from the Oxford Dictionary right from the command line.
 
 Usage:
