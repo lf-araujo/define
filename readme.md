@@ -1,6 +1,3 @@
-![Define](https://imgur.com/a/JhyKJH8)
-
-
 # define
 
 This is a small command line tool to check definitions from Oxford dictionary right from the command line. The project was inspired by a simple bash script from [@off-world](https://github.com/off-world/describe).
