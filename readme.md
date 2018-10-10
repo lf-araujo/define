@@ -1,12 +1,13 @@
+![Define](https://imgur.com/a/JhyKJH8)
+
+
 # define
 
 This is a small command line tool to check definitions from Oxford dictionary right from the command line. The project was inspired by a simple bash script from [@off-world](https://github.com/off-world/describe).
 
-It is coded in Swift and can be run as a marathon script with a simple: 
+It is coded in Swift and have some colors too:
 
-```bash
-marathon run lf-araujo/define.git
-``` 
+![](https://imgur.com/a/mQnZXi5)
 
 A binary ~~will be~~ is provided for Ubuntu 18.04.
 
