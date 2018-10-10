@@ -4,8 +4,6 @@ This is a small command line tool to check definitions from Oxford dictionary ri
 
 It is coded in Swift and have some colors too:
 
-<a href="https://imgur.com/a/mQnZXi5"><img src="https://imgur.com/a/mQnZXi5" alt="image" /></a>
-
 ![](https://i.imgur.com/103CXbp.png)
 
 A binary ~~will be~~ is provided for Ubuntu 18.04.
